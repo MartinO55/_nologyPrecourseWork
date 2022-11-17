@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <!-- HEader Section with paragraph-->
+        <div class = "inefficientStylingContainer">
+            <p>Header Section</p>
+
+        </div>
+
+        <p>Main Section</p>
+
+        <div>
+            <p>
+                <a href="index.html">Back to index</a>
+            </p>
+        </div>
+
+        <!--Main Section with paragraph-->
+
+        <!-- Style block header paragraph to red,main block to blue-->
+        <style>
+/*So the correct way to do this would be to give all the elements to be styled their own ID and to tap them individually, so that if you ever change the HTML layout the page doesnt explode*/
+        .inefficientStylingContainer > p{
+            color: red;
+        }
+        .inefficientStylingContainer + p{
+            color: blue;
+        }
+        
+        </style>
+
+    </body>
+</html>
