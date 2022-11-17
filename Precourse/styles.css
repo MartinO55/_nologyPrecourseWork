@@ -1,3 +1,11 @@
 #mediumSizedHeader:hover{
     color: blueviolet;
 }
+#favouriteLink{
+    text-decoration: none;
+}
+
+#cssChallengeLinkHolder{
+    text-decoration: none;
+    color: blue;
+}
