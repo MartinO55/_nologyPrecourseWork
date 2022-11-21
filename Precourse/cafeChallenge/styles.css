@@ -68,3 +68,16 @@ body{
     border:3px solid black;
     box-shadow: 10px 10px 10px grey;
 }
+
+#commentForm{
+    display: grid;
+    justify-content: center;
+    
+  
+}
+
+#formDiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
