@@ -52,6 +52,7 @@
                 <button onclick="return contactUsSubmitButton(event)">Submit</button>
             </div>
             <br />
+            <br />
             <div id="clearFormButton">
                 <button>Clear Form</button>
             </div>
@@ -62,13 +63,19 @@
         <!-- TODO render list of messages as a DL element (description list), with dt's and dd elements - so dt would be email, name and message, then the dd would be the content of each and then a break-->
         <!--okay, so the show messages function exists here, and is called as well in the script page, primarily so it is possible to view the messages without sending a new one-->
         <div id ='showMessagesArea'>
-            <div>
+            <div id ="messagesHeading">
+                <br />
                 <h3>Messages</h3>
+                <br />
             </div>
             <div id =clearMessagesButton>
+                <br />
                 <Button onclick="clearMessages()">Clear Messages</Button>
+                <br />
             </div>
 
+            <br />
+            <br />
             <dl id = 'currentMessages'>
                 <script>showMessages();</script>  
             </dl>
