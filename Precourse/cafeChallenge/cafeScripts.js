@@ -40,7 +40,9 @@ function showMessages(){
     for (i = 0;i<currentMessages.length;i++) {
         let listItem = "";
         const currentMessage = currentMessages[i];
-        listItem += `<dt>${currentMessage.fullName} - ${currentMessage.email}</dt>`;
+        listItem += `<dt>${currentMessage.fullName} - ${currentMessage.email}</dt>`;//these ones need backtics, not quotes
+        listItem += `<dd>${currentMessage.message}</dd>`
+        listItem += '<br />' //so this one doesnt need the backtics, it can work with quotes
 
         listItems.push(listItem);
 
