@@ -11,6 +11,15 @@ function contactUsSubmitButton(event){
 
     const thisMessage = {email,fullName,message};
 
-    console.log(thisMessage)
+    //console.log(thisMessage)
+
+    let currentMessages =[];
+
+    if (window.sessionStorage.getItem("messages")){
+        currentMessages = JSON.parse(window.sessionStorage.getItem("messages"));
+    }
+
+    currentMessages.push(thisMessage);
+    window.sessionStorage.setItem("messages", JSON.stringify(currentMessages));
 
 }

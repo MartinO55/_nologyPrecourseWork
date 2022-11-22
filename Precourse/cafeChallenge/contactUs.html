@@ -30,7 +30,7 @@
         <!--form needs clear and submit buttons (submit needs to check requirements)-->
 
         <!--Organised with CSS grid. label columns half width of field-->
-        <form id="commentForm" onsubmit="return contactUsSubmitButton(event)">
+        <form id="commentForm">
             <div id="formDiv">
                 <label for="email">Enter your email: </label>
                 <input type="text" name="email" id="email" required>
@@ -48,8 +48,8 @@
             </div>
 
             <!--TODO Store in session storage with JS function that adds each field to an array then turns it to a JSON string-->
-            <div id="submitButton">
-                <button>Submit</button>
+            <div id="submitButton"><!--I put this in on click as opposed to the form itself because the clear button just works this way-->
+                <button onclick="return contactUsSubmitButton(event)">Submit</button>
             </div>
             <div id="clearButton">
                 <button>Clear</button>
