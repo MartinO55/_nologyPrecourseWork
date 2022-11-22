@@ -23,3 +23,29 @@ function contactUsSubmitButton(event){
     window.sessionStorage.setItem("messages", JSON.stringify(currentMessages));
 
 }
+
+
+function showMessages(){
+    //TODO - render each of the messages from session storage as its own HTML element as part of the DL element on the page - so the DL is there, the dt is email and the dd is the .value
+    //I assume we just use a foreach loop
+    console.log("showMessagesCalled")
+
+    let currentMessages =[];
+
+    if (window.sessionStorage.getItem("messages")){
+        currentMessages = JSON.parse(window.sessionStorage.getItem("messages"));
+    }
+
+    let listItems = [];
+    for (i = 0;i<currentMessages.length;i++) {
+        let listItem = "";
+        const currentMessage = currentMessages[i];
+        listItem += `<dt>${currentMessage.fullName} - ${currentMessage.email}</dt>`;
+
+        listItems.push(listItem);
+
+    }
+
+    let descList = document.getElementById('currentMessages');
+    descList.innerHTML = listItems.join('');
+}
