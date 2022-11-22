@@ -48,18 +48,27 @@
             </div>
 
             <!--TODO Store in session storage with JS function that adds each field to an array then turns it to a JSON string-->
-            <div id="submitButton"><!--I put this in on click as opposed to the form itself because the clear button just works this way-->
+            <div id="submitButton"><!--I put this in on click as opposed to the form itself because the clear form button just works this way-->
                 <button onclick="return contactUsSubmitButton(event)">Submit</button>
             </div>
-            <div id="clearButton">
-                <button>Clear</button>
+            <br />
+            <div id="clearFormButton">
+                <button>Clear Form</button>
             </div>
 
         </form>
 
         <!--TODO: Section that retrieves any messages from session storage and displays them, along with a button that clears all the session-->
         <!-- TODO render list of messages as a DL element (description list), with dt's and dd elements - so dt would be email, name and message, then the dd would be the content of each and then a break-->
+        <!--okay, so the show messages function exists here, and is called as well in the script page, primarily so it is possible to view the messages without sending a new one-->
         <div id ='showMessagesArea'>
+            <div>
+                <h3>Messages</h3>
+            </div>
+            <div id =clearMessagesButton>
+                <Button onclick="clearMessages()">Clear Messages</Button>
+            </div>
+
             <dl id = 'currentMessages'>
                 <script>showMessages();</script>  
             </dl>

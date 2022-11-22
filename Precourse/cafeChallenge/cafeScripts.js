@@ -51,3 +51,11 @@ function showMessages(){
     let descList = document.getElementById('currentMessages');
     descList.innerHTML = listItems.join('');
 }
+
+function clearMessages(){
+    if (window.sessionStorage.getItem("messages")){
+        window.sessionStorage.removeItem("messages");
+    }
+
+    showMessages();
+}
