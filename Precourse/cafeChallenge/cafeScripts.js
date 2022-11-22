@@ -21,7 +21,7 @@ function contactUsSubmitButton(event){
 
     currentMessages.push(thisMessage);
     window.sessionStorage.setItem("messages", JSON.stringify(currentMessages));
-
+    showMessages();//this can go here
 }
 
 
