@@ -37,7 +37,7 @@ function showMessages(){
     }
 
     let listItems = [];
-    for (i = 0;i<currentMessages.length;i++) {
+    for (i = 0; i<currentMessages.length; i++) {
         let listItem = "";
         const currentMessage = currentMessages[i];
         listItem += `<dt>${currentMessage.fullName} - ${currentMessage.email}</dt>`;//these ones need backtics, not quotes
