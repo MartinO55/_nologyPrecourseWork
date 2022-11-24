@@ -100,3 +100,32 @@ button{
 button:hover{
     background-color: greenyellow;
 }
+
+label{
+    font-size: large;
+    margin:0.5rem
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: large;
+    padding: 0.5rem;
+    transition-duration: 0.2s;
+}
+input:hover{
+    background-color: greenyellow;
+}
+
+textarea{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: large;
+    padding: 0.5rem;
+    transition-duration: 0.2s;
+}
+textarea:hover{
+    background-color: greenyellow;
+}
