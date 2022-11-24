@@ -103,7 +103,7 @@ button:hover{
 
 label{
     font-size: large;
-    margin:0.5rem
+    margin:0.7rem
 }
 
 input{
@@ -128,4 +128,8 @@ textarea{
 }
 textarea:hover{
     background-color: greenyellow;
+}
+
+#currentMessages{
+    font-size: large;
 }
